@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS pseudo element</title>
+    <style>
+        p::first-letter {
+            color:red;
+            font-size: 2rem;
+        }
+
+        p::first-line{
+            color:orange
+        }
+
+        /* www.suntech.edu.vn */
+        span::before {
+            content: 'www.';
+        }
+
+        span::after {
+            content: '.edu.vn';
+        }
+    </style>
+</head>
+<body>
+   <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis fugit sed sint! Molestiae recusandae atque quia nemo ducimus voluptatum eaque nisi vitae tempora hic, consectetur consequuntur non quisquam nihil pariatur!
+   </p>
+
+   <span>Suntech</span>
+</body>
+</html>
