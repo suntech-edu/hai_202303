@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index in CSS</title>
+    <style>
+        div {
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            color: #FFF
+            
+        }
+
+        .box1 {
+            top: 50px;
+            left: 50px;
+            background-color: red;
+            z-index: 9;
+        }
+
+        .box2 {
+            top: 100px;
+            left: 100px;
+            background-color: brown;
+            z-index: 15;
+        }
+
+        .box3 {
+            top: 150px;
+            left: 150px;
+            background-color: orange;
+            z-index: 12;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">BOX1</div>
+    <div class="box2">BOX2</div>
+    <div class="box3">BOX3</div>
+</body>
+</html>
