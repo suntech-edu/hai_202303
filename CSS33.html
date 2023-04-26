@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disply in CSS</title>
+    <style>
+        .item {
+            background-color: red;
+            color: #FFF;
+            padding: 5px;
+            display: inline-block;
+            margin: 5px;
+            width: 150px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+
+        
+
+        .demo {
+            background-color: yellow;
+            color: #FFF;
+            margin: 5px;
+            padding: 5px;
+            width: 100px;
+        }
+
+        .container {
+            display: flex;
+            background-color: beige;
+            
+        }
+    </style>
+</head>
+<body>
+    <span class="item hidden">Menu 1</span>
+    <span class="item">Menu 2</span>
+    <span class="item">Menu 3</span>
+    <span class="item">Menu 4</span>
+    <span class="item hidden">Menu 5</span>
+
+    <div class="container">
+        <div class="demo">BOX 1</div>
+        <div class="demo">BOX 2</div>
+        <div class="demo">BOX 3</div>
+        <div class="demo">BOX 4</div>
+        <div class="demo">BOX 5</div>
+    </div>
+</body>
+</html>
