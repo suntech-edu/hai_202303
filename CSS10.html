@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Paren Selector</title>
+    <style>
+        .root > p {
+            background: orange;
+        }
+
+        .level-1 > p:nth-of-type(2) {
+            color: red;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="root">
+        <h4>level 1</h4>
+        <p>suntech.edu.vn</p>
+        <p>suntech.edu.vn</p>
+    </div>
+
+        <div class="level-1">
+           <h4>Level 2</h4>
+           <p>suntech.edu.vn</p>
+           <p>suntech.edu.vn</p>
+        </div>
+
+        <div class="level-2">
+            <h4>level 3</h4>
+            <p>suntech.edu.vn</p>
+            <p>suntech.edu.vn</p>
+            <p>suntech.edu.vn</p>
+        </div>
+</body>
+</html>
