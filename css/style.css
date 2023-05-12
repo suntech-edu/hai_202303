@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-size: 14px;
+    font-family: 'Open San', sans-serif;
+}
+/* HEADER */
+
+.container {
+    margin: 0px auto;
+    max-width: 1024px;
+}
+.container ul li {
+    margin-left: 25px;
+}
+
+header {
+    margin-top: 20px; !important
+    width: 100%;
+    min-height: 150px;
+}
+
+header .logo {
+    width: 25%;
+}
+header .slogan {
+    width: 75%;
+}
+
+header .logo, header .slogan {
+    float: left;
+}
+header .slogan h2 {
+    line-height: 125px;
+    text-align: center;
+    color: #f16b22;
+    text-transform: uppercase;
+    font-size: 2.0em;
+}
+
+/* Menu */
+
+nav {
+    background-color: #57a929;
+    height: 45px;
+    width: 100%;
+
+    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    
+}
+nav ul li a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    line-height: 45px;
+    padding: 0px 20px 0px 20px;
+    font-size: 1.2em;
+}
+
+nav ul li:hover {
+    background: #f16b22;
+}
+
+/* Main */
+main {
+    width:100%
+}
+
+#main-left {
+    float:left;
+    width: 75%;
+}
+
+#main-left .new-item {
+    float: left;
+    width: 100%;
+    padding: 10px 10px 10px 0px;
+}
+
+#main-left .new-item img {
+    float: left;
+    margin-right: 10px;
+}
+
+#main-left .new-item h3 {
+    font-size: 1.5em;
+    padding-bottom: 8px;
+}
+
+#main-left .new-item p {
+    margin-bottom: 8px;
+    min-height: 18px;
+    line-height: 18px;
+}
+
+#main-right {
+    float: left;
+    width: 20%;
+    margin-left: 5%;
+}
+
+#main-right h3 {
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+#main-right ul  {
+    list-style-type: none;
+    background-color: #e8e8e8;
+    padding: 10px 10px 10px 0px;
+    margin-bottom: 20px;
+}
+
+#main-right ul li a {
+    display: block;
+    text-decoration: none;
+    color: #5e686e;
+    line-height: 30px;
+    font-weight: bold;
+    text-indent: 10px;
+}
+
+#main-right ul li a:hover {
+    color: #f16b22;
+}
+
+#main-right .ads img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    clear: both;
+    height: 60px;
+    background-color: #0d2201;
+    line-height: 60px;
+    width: 100;
+    color: #FFF;
+    text-align: center;
+}
+
+
+
+

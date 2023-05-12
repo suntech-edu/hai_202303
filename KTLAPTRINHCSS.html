@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Những cú pháp tổng quan về CSS</h1>
+    seletor{ <br/>
+    css-attribute-name1: value; <br/>
+    css-attribute-name2: value; <br/>
+    css-attribute-name3: value; <br/>
+    css-attribute-name-n: value; <br/>
+    }   
+
+
+    Cách VIẾT CODE TRONG CSS <br/>
+    p {
+        color: orange;
+    }
+
+    h1 {
+     background: green;
+    }
+
+    div {
+        border: 1px solid #ccc;
+        color: orange;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    <br/>
+    + Những loại selector thường dùng
+    - Selector theo tên thẻ
+    - Selector theo tên class
+    - Selector theo tên ID NAME
+    - Selector theo attrbute của thẻ HTML
+    * (CHỌN tất cả các thẻ trên trang)
+    Nhóm các selector
+
+    #07. SELECTOR số thứ tự của thẻ.
+    -: fist-of-type: lấy ra thẻ đầu tiên trong danh sách
+    Ex: 
+    
+        p:fist-of-type{
+
+    }
+    p:last-of-type: thẻ cuối cùng trong danh sách
+    -nth-of-type(n) :Lấy thẻ ở vị trí trong danh sách
+
+    #8:SELECTOR THEO HÀNH ĐỘNG CỦA NGƯỜI DÙNG
+
+    - selector:hover {
+        // your code css
+    }
+
+
+    - selector:a: active {
+        // your code css
+    }
+
+    - selector:focus {
+        // your code css
+    }
+    <br/> <br/>
+    #.09 CSS pseudo element
+    -Làm thay đổi một phần nào đó trong html
+   - selector:: <fieldset-letter {
+    // CSS
+   }
+
+   - selector::first-line
+        selector::first-line{
+            // CSS
+        }
+
+        -selector::after
+
+        -selector::before
+
+
+        Note:
+        Pseudo elenmen: cho phép thay đổi một phần của thẻ html
+        Pseudo class: cho phép thay đổi trạng thái của thẻ html khi có hành động của người dùng
+    # 10. Parent selector
+
+    selectorParent > selectorChildren
+
+    # 11. Class vs ID Selector
+    - Class : Được phép định nghĩa nhiều lần trên cùng một trang 
+            Dùng để qui định CSS giống nhau cho nhóm thẻ HTML có chung các đặng điểm
+    -ID: Tồn tại dyu nhất trên 1 trang  và không được phép định nghĩa  2 lần trên trang 
+
+    - Đơn vị tương đối:
+    sẽ bị biến đổi khi chạy trên các thiết bị có màn hình giống nhau và phụ thuộc vào thẻ cha chứa nó
+
+        - Đại diện 
+        - %
+        - em
+        - rem
+
+        1em sẽ phụ thuộc vào body
+        1rem sẽ phục thuộc vào html
+
+
+        ###12. CSS for text=> :
+        1: text color
+       + color:#FFF
+       + color:blue
+       + color:rgb(238,130,238)
+       + color: rgba (255,99,71,0.4)
+
+
+      2: Text Alignment
+       + text-align:left |center|right|justify;
+       + vertical-align: baseline |text top |text bottom|sub| super
+        
+        3: Text Decoration
+                text-decoration: non|underline|line-throu|overline
+
+        4: Text Transformation
+            text-transform:upper|lowercase|capitalize
+
+        ### Sprite css
+
+
+        <span>Đại diện cho thẻ inline</span>
+
+
+       1: #### Cú pháp ngắn gọn
+       - border: ?px type color;
+
+      2.###Thuộc tính chi tiết
+        - border-color: colorVlue;
+        -border-width: url(image_path)
+        border-style: solid | dotted | dashed | double
+
+       3. ### border theo vị trí
+        - border-top: ?px type colorVlue
+        -border-right: ?px type color
+        -border-bottom: ?px type color
+        -border-left: ?px type color
+
+        4.#### Border radius
+        - border-radius: ?px;
+        -border-bottom-right-radius: ?px
+        -border-bottom-left-radius: ?px
+        border-top-left-radius: ?px
+        -boeder-top-right-radius: ?px
+
+
+
+       < Margin & Padding >
+
+       1. Margin
+       * margin: top right botom -border-left
+       * margin-top: ?px
+       * margin-right: ?px
+       * margin-bottom: ?px
+       * margin-left: ?px
+
+
+       2. Padding
+       * padding: top right bottom left
+       * padding-top: ?px
+       padding-right: ?px
+       padding-bottom: ?px
+       paddding-left: ?px
+
+
+       ###FLOAT & CLEAR
+       1.float
+       
+       * float:left;
+        
+       CLEAR
+       * clear:left
+       clear:right
+       clear:both
+
+
+
+       --------
+      * fon-weight: bold :: In đậm
+        * line-hight   : kéo chữ xuống dưới
+       * text-align: center : đẩy chữ ra giữa khung 
+       margin: 0px auto
+
+
+       *** Position in css
+       * Qui định vị trí cho 1 thẻ HTML dựa trên các phương thức sau
+
+       1.Static
+       * Position: static
+
+       2.Relative
+       + position:reltive
+       
+       3.Absolute
+       + position : absolute
+
+       4 Fixed
+       + position:fixed
+
+       5. Sticky
+       + position
+
+       2.(Các thuộc tính quy định khoảng cách)
+       +top: ?px
+       right: ?px
+       left: ?px
+       bottom: ?px
+
+
+      Thuộc tính: z-index in css
+      * Qui định thứ tự hiển thị cho các thẻ
+      HTML (Layer)
+
+      ..Cách dùng..
+      *z-index: number
+
+      Chỉ sự dụng với position
+      * Relative;
+      * absolute;
+      * fixed;
+      * Sticky;
+        (KHI CHÚNG TA SỬ DỤNG Z-INDEX, chúng ta phải sử dụng position :absolute)
+
+
+
+        Bài 29 : Làm việc với font trong CSS
+        *  Qui định kiểu và format cho nội dung là text trên trang 
+        (   qui định kiểu và (định dạng) cho nội dung là CHỮ trên trang)
+
+        1: Cú pháp gắn gọn
+        * font:font-style; font-variant;font-weight;font-size; font-family 
+
+        2: thuộc tính chi tiết
+        * font-style: italic;
+        * font-variant: small-caps;
+        * font-weight: bold;
+        * font-size: ?;
+        * font-family: Arial, Helvetica, sans-serif;
+
+        <small-cap:(Chuyển tất cả chữ thường về chữ in hoa)
+        font-family : kiểu chuyển phong chữ
+        font-style : (italic) kiểu in nghiêng
+
+
+
+        text-decoration: none; :Loại bỏ gạch chân
+        display: inline-block :Hiển thị 
+        padding: Khoảng cách của menu 
+
+        margin-bottom :...?px :đẩy nội dung của chữ xuống dưới
+        padding-bottom :
+
+        line-hight: khoảng cách cách của các dòng với nhau
+
+
+        #### Display  in CSS
+
+        - display:block
+        - display:inline
+        - display:inline-block    : mới nhận độ rộng của width
+        - display:none
+        - display:flex
+
+
+        FLEXBOX trong CSS
+        1. flex-direction
+        -row
+        -row-reverse
+        -column
+        -column-reverse
+        2. justify-conten
+        -flex-start
+        -flex-end
+        -center
+        -space-around
+        -space-between
+</body>
+</html> 
